@@ -72,12 +72,23 @@
         .projects li {
             margin-bottom: 12px;
             font-size: 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 8px;
         }
 
         .projects li:before {
             content: "▶ ";
             color: #4fc1ff;
             margin-right: 8px;
+            flex-shrink: 0;
+        }
+
+        .project-info {
+            flex: 1;
+            min-width: 200px;
         }
 
         .projects a {
@@ -89,6 +100,19 @@
         .projects a:hover {
             color: #9cdcfe;
             text-decoration: underline;
+        }
+
+        .timestamp {
+            color: #808080;
+            font-size: 12px;
+            font-weight: 300;
+            white-space: nowrap;
+            margin-top: 2px;
+        }
+
+        .timestamp:before {
+            content: "// ";
+            color: #6a9955;
         }
 
         .contact {
@@ -157,7 +181,12 @@
             <div class="section-title">Projects</div>
             <div class="projects">
                 <ul>
-                    <li><a href="https://fredherbertcode.github.io/disco-csv-spotify/" target="_blank">Discogs to Spotify Converter</a></li>
+                    <li>
+                        <div class="project-info">
+                            <a href="https://fredherbertcode.github.io/disco-csv-spotify/" target="_blank">Discogs to Spotify Converter</a>
+                            <div class="timestamp">launched 2024-03-15 14:30:00</div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
