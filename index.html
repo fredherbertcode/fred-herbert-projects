@@ -5,87 +5,174 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fred Herbert</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
         body {
-            font-family: 'Crimson Text', serif;
-            margin: 0;
-            padding: 40px;
-            max-width: 600px;
+            font-family: 'JetBrains Mono', 'Consolas', 'Monaco', monospace;
+            background-color: #1e1e1e;
+            color: #d4d4d4;
+            min-height: 100vh;
+            padding: 0;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 800px;
             margin: 0 auto;
-            line-height: 1.6;
-            color: #333;
-            background-color: #fff;
+            padding: 40px 20px;
+        }
+
+        .header {
+            border-bottom: 1px solid #3c3c3c;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
         }
 
         h1 {
-            font-size: 2.5em;
+            font-size: 24px;
+            font-weight: 400;
+            color: #569cd6;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #6a9955;
+            opacity: 0.8;
+        }
+
+        .section {
             margin-bottom: 40px;
-            font-weight: 600;
+        }
+
+        .section-title {
+            font-size: 16px;
+            color: #ce9178;
+            margin-bottom: 16px;
+            font-weight: 400;
         }
 
         .projects {
-            margin-bottom: 60px;
+            background-color: #252526;
+            border: 1px solid #3c3c3c;
+            border-radius: 4px;
+            padding: 20px;
         }
 
         .projects ul {
             list-style: none;
-            padding: 0;
         }
 
         .projects li {
-            margin-bottom: 20px;
-            font-size: 1.2em;
+            margin-bottom: 12px;
+            font-size: 14px;
+        }
+
+        .projects li:before {
+            content: "▶ ";
+            color: #4fc1ff;
+            margin-right: 8px;
         }
 
         .projects a {
-            color: #333;
+            color: #4fc1ff;
             text-decoration: none;
-            border-bottom: 1px solid #333;
+            transition: color 0.2s ease;
         }
 
         .projects a:hover {
-            opacity: 0.7;
+            color: #9cdcfe;
+            text-decoration: underline;
         }
 
         .contact {
-            border-top: 1px solid #eee;
-            padding-top: 30px;
-            font-size: 1.1em;
+            background-color: #252526;
+            border: 1px solid #3c3c3c;
+            border-radius: 4px;
+            padding: 20px;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
         }
 
         .contact a {
-            color: #333;
+            color: #dcdcaa;
             text-decoration: none;
-            border-bottom: 1px solid #333;
-            margin-right: 20px;
+            font-size: 14px;
+            padding: 8px 12px;
+            border: 1px solid #3c3c3c;
+            border-radius: 3px;
+            background-color: #2d2d30;
+            transition: all 0.2s ease;
         }
 
         .contact a:hover {
-            opacity: 0.7;
+            background-color: #37373d;
+            border-color: #007acc;
+            color: #ffffff;
         }
 
-        .contact p {
-            margin-bottom: 15px;
+        .terminal-line {
+            font-size: 12px;
+            color: #6a9955;
+            margin-bottom: 20px;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .terminal-line:before {
+            content: "$ ";
+            color: #4fc1ff;
+        }
+
+        @media (max-width: 600px) {
+            .contact-links {
+                flex-direction: column;
+            }
+
+            .contact a {
+                text-align: center;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Fred Herbert</h1>
+    <div class="container">
+        <div class="header">
+            <h1>Fred Herbert</h1>
+            <div class="subtitle">// Software Developer & Project Creator</div>
+        </div>
 
-    <div class="projects">
-        <ul>
-            <li><a href="https://fredherbertcode.github.io/disco-csv-spotify/" target="_blank">Discogs to Spotify Converter</a></li>
-        </ul>
-    </div>
+        <div class="terminal-line">ls -la ~/projects</div>
 
-    <div class="contact">
-        <p>
-            <a href="mailto:fredh172@gmail.com">Email</a>
-            <a href="https://github.com/fredherbertcode" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/fred-herbert/" target="_blank">LinkedIn</a>
-            <a href="https://instagram.com/fredherbert17" target="_blank">Instagram</a>
-        </p>
+        <div class="section">
+            <div class="section-title">Projects</div>
+            <div class="projects">
+                <ul>
+                    <li><a href="https://fredherbertcode.github.io/disco-csv-spotify/" target="_blank">Discogs to Spotify Converter</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Contact</div>
+            <div class="contact">
+                <div class="contact-links">
+                    <a href="mailto:fredh172@gmail.com">📧 Email</a>
+                    <a href="https://github.com/fredherbertcode" target="_blank">🐙 GitHub</a>
+                    <a href="https://www.linkedin.com/in/fred-herbert/" target="_blank">💼 LinkedIn</a>
+                    <a href="https://instagram.com/fredherbert17" target="_blank">📸 Instagram</a>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
