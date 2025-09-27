@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Fred Herbert</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'JetBrains Mono', 'Consolas', 'Monaco', monospace;
+            background-color: #fefefe;
+            color: #000000;
+            min-height: 100vh;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #f8f8f8;
+            border: 1px solid #e0e0e0;
+            border-radius: 3px;
+            padding: 8px 12px;
+            text-decoration: none;
+            color: #000000;
+            font-size: 14px;
+            transition: all 0.2s ease;
+        }
+
+        .back-button:hover {
+            background-color: #f0f0f0;
+            border-color: #000000;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 400;
+            color: #000000;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #000000;
+            opacity: 0.9;
+        }
+
+        .content {
+            background-color: #f8f8f8;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            padding: 30px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .content p {
+            margin-bottom: 16px;
+        }
+
+        .content p:last-child {
+            margin-bottom: 0;
+        }
+
+        .content a {
+            color: #000000;
+            text-decoration: underline;
+        }
+
+        .content a:hover {
+            background-color: #f0f0f0;
+        }
+
+        .terminal-line {
+            font-size: 12px;
+            color: #000000;
+            margin-bottom: 20px;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .terminal-line:before {
+            content: "$ ";
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="index.html" class="back-button">← Back</a>
+            <h1>About</h1>
+            <div class="subtitle">// a quick intro..</div>
+        </div>
+
+        <div class="terminal-line">cat about.txt</div>
+
+        <div class="content">
+            <p>I work in tech startups, focusing on Business Development, Operations, and Tech Generalist roles. I'm still learning JavaScript but enjoy building apps, mostly with AI assistance.</p>
+
+            <p>I'm a fast learner who thrives in the quick-moving nature of tech. My main strengths are adapting to change and creative problem-solving. I also have experience with Adobe Creative Suite.</p>
+
+            <p>Personality-wise, I'm an <a href="https://www.16personalities.com/entp-personality" target="_blank">ENTP</a> - always curious and love exploring new ideas.</p>
+        </div>
+    </div>
+</body>
+</html>

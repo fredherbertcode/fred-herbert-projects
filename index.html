@@ -32,6 +32,26 @@
             border-bottom: 1px solid #e0e0e0;
             padding-bottom: 20px;
             margin-bottom: 40px;
+            position: relative;
+        }
+
+        .about-button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #f8f8f8;
+            border: 1px solid #e0e0e0;
+            border-radius: 3px;
+            padding: 8px 12px;
+            text-decoration: none;
+            color: #000000;
+            font-size: 14px;
+            transition: all 0.2s ease;
+        }
+
+        .about-button:hover {
+            background-color: #f0f0f0;
+            border-color: #000000;
         }
 
         h1 {
@@ -171,6 +191,7 @@
 <body>
     <div class="container">
         <div class="header">
+            <a href="about.html" class="about-button">About</a>
             <h1>Fred Herbert</h1>
             <div class="subtitle">// making stuff..</div>
         </div>
@@ -181,6 +202,12 @@
             <div class="section-title">Projects</div>
             <div class="projects">
                 <ul>
+                    <li>
+                        <div class="project-info">
+                            <a href="https://fredherbertcode.github.io/find-a-wave/" target="_blank">🏄 Find A Wave</a>
+                            <div class="timestamp">launched 2024-09-10 16:45:00</div>
+                        </div>
+                    </li>
                     <li>
                         <div class="project-info">
                             <a href="https://fredherbertcode.github.io/disco-csv-spotify/" target="_blank">💿 Discogs to Spotify Converter</a>
